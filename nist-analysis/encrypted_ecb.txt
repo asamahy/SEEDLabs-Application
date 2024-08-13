@@ -1,0 +1,42 @@
+Test Data File:/Users/samahy/College/Computer System Security/12th_Project/Tasks/Task_1/encrypted_ecb.bin_string.bin
+
+
+Type of Test                                      	P-Value             	Conclusion
+01. Frequency (Monobit) Test                      	0.0                 	Non-Random
+02. Frequency Test within a Block                 	1.0                 	Random
+03. Runs Test                                     	0.0                 	Non-Random
+04. Test for the Longest Run of Ones in a Block   	4.4003844943604805e-220	Non-Random
+05. Binary Matrix Rank Test                       	0.0                 	Non-Random
+06. Discrete Fourier Transform (Spectral) Test    	0.0                 	Non-Random
+07. Non-overlapping Template Matching Test        	0.0                 	Non-Random
+08. Overlapping Template Matching Test            	0.0                 	Non-Random
+09. Maurer's "Universal Statistical" Test         	0.0                 	Non-Random
+10. Linear Complexity Test                        	0.0                 	Non-Random
+11. Serial Test:
+													0.0                 	Non-Random
+													0.0                 	Non-Random
+12. Approximate Entropy Test                      	0.0                 	Non-Random
+13. Cumulative Sums Test (Forward)                	0.0                 	Non-Random
+14. Cumulative Sums Test (Backward)               	0.0                 	Non-Random
+15. Random Excursions Test:
+				State     	Chi Squared         	P-Value             	Conclusion
+				-4        	1.4285714285714286  	0.9211625381990318  	Random
+				-3        	2.0                 	0.8491450360846096  	Random
+				-2        	3.3333333333333335  	0.6487423586675933  	Random
+				-1        	3.6                 	0.6083132920814687  	Random
+				+1        	3.6                 	0.6083132920814687  	Random
+				+2        	4.434567901234568   	0.4886854688472917  	Random
+				+3        	7.07744             	0.21494441643911052 	Random
+				+4        	7.459058725531029   	0.18867592181395285 	Random
+16. Random Excursions Variant Test:
+				State     	COUNTS              	P-Value             	Conclusion
+				-1.0      	4                   	0.17971249487899987 	Random
+				+1.0      	10                  	1.0                 	Random
+				+2.0      	14                  	0.6055766163353464  	Random
+				+3.0      	21                  	0.27133212189276534 	Random
+				+4.0      	18                  	0.49896229860376107 	Random
+				+5.0      	15                  	0.7093881150142263  	Random
+				+6.0      	16                  	0.6858304344516057  	Random
+				+7.0      	17                  	0.6642001619664318  	Random
+				+8.0      	16                  	0.729034489538804   	Random
+				+9.0      	11                  	0.9567498363337371  	Random

@@ -1,0 +1,41 @@
+Test Data File:/Users/samahy/College/Computer System Security/12th_Project/Tasks/Task_1/body.bin_string.bin
+
+
+Type of Test                                      	P-Value             	Conclusion
+01. Frequency (Monobit) Test                      	0.0                 	Non-Random
+02. Frequency Test within a Block                 	0.0                 	Non-Random
+03. Runs Test                                     	0.0                 	Non-Random
+04. Test for the Longest Run of Ones in a Block   	2.1622349726706396e-272	Non-Random
+05. Binary Matrix Rank Test                       	0.0                 	Non-Random
+06. Discrete Fourier Transform (Spectral) Test    	0.0                 	Non-Random
+07. Non-overlapping Template Matching Test        	0.0                 	Non-Random
+08. Overlapping Template Matching Test            	0.0                 	Non-Random
+09. Maurer's "Universal Statistical" Test         	0.0                 	Non-Random
+10. Linear Complexity Test                        	0.0                 	Non-Random
+11. Serial Test:
+													0.0                 	Non-Random
+													0.0                 	Non-Random
+12. Approximate Entropy Test                      	0.0                 	Non-Random
+13. Cumulative Sums Test (Forward)                	0.0                 	Non-Random
+14. Cumulative Sums Test (Backward)               	0.0                 	Non-Random
+15. Random Excursions Test:
+				State     	Chi Squared         	P-Value             	Conclusion
+				-4        	0.14285714285714285 	0.9996100613790039  	Random
+				-3        	0.2                 	0.9991138612111875  	Random
+				-2        	0.3333333333333333  	0.9969687632568645  	Random
+				-1        	1.0                 	0.9625657732472964  	Random
+				+1        	3.0                 	0.6999858358786276  	Random
+				+2        	15.0                	0.010362337915786429	Random
+				+3        	35.0                	1.5046506621757205e-06	Non-Random
+				+4        	63.0                	2.9111549198896303e-12	Non-Random
+16. Random Excursions Variant Test:
+				State     	COUNTS              	P-Value             	Conclusion
+				+1.0      	1                   	1.0                 	Random
+				+2.0      	1                   	1.0                 	Random
+				+3.0      	1                   	1.0                 	Random
+				+4.0      	1                   	1.0                 	Random
+				+5.0      	1                   	1.0                 	Random
+				+6.0      	1                   	1.0                 	Random
+				+7.0      	1                   	1.0                 	Random
+				+8.0      	1                   	1.0                 	Random
+				+9.0      	1                   	1.0                 	Random
