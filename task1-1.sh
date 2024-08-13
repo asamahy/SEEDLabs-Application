@@ -35,7 +35,7 @@ key=$(openssl rand -hex 16)
 echo "Generated AES-128 key."
 
 header_size=54
-header_file="${out_folder}/header.bin"
+header_file="${out_folder}/header"
 body_file="${out_folder}/body.bin"
 
 tail -c +55 "$image_path" > "$body_file"
@@ -65,4 +65,14 @@ cat "$header_file" "$cbc_encryption" > "$cbc_encrypted_image"
 cat "$header_file" "$cfb_encryption" > "$cfb_encrypted_image"
 cat "$header_file" "$ofb_encryption" > "$ofb_encrypted_image"
 
-echo "Done. Encrypted BMP files created:"
+# Convert the encrypted image binary files to BMP format (doesnt work needs bmp header)
+# sips -s format bmp "$ecb_encrypted_image" --out "${ecb_encrypted_image//.bin/.bmp}" > /dev/null 2>&1
+
+# Convert the encrypted image binary files to string format for analysis by NIST tool
+# xxd -b -c 1 "$cbc_encryption" | awk '{print $2}' | tr -d '\n' > "${cbc_encryption}.txt"
+for file in "${out_folder}"/*.bin; do
+    xxd -b -c 1 "$file" | awk '{print $2}' | tr -d '\n' > "${file}_string.bin"
+done
+
+
+echo -e "Done. Encrypted BMP files created. \a"
