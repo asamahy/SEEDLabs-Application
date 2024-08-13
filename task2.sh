@@ -9,7 +9,6 @@ private_key="${out_folder}/private_key.pem"
 public_key="${out_folder}/public_key.pem"
 
 openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -pkeyopt rsa_keygen_pubexp:3 -out "$private_key" > /dev/null 2>&1
-
 openssl pkey -in "$private_key" -out "$public_key" -pubout && echo "RSA private and public keys generated." || echo "RSA key generation failed."
 
 # echo "RSA private and public keys generated."
@@ -18,11 +17,10 @@ openssl pkey -in "$private_key" -out "$public_key" -pubout && echo "RSA private 
 cbc_encrypted_image="Task_1/encrypted_cbc.bmp"
 file_hash="${out_folder}/hash.txt"
 
-openssl dgst -sha1 "$cbc_encrypted_image" | awk '{print $2}' > "$file_hash"
+openssl dgst -sha1 "$cbc_encrypted_image" | awk '{print $2}' > "$file_hash" && echo "SHA1 hash created for the CBC encrypted image." || echo "SHA1 hash creation failed."
 # file_hash=$(openssl dgst -sha1 "$cbc_encrypted_image" | awk '{print $2}')
 # echo $file_hash
 
-echo "SHA1 hash created for the CBC encrypted image."
 # read ok
 
 signature_file="${out_folder}/signature.bin"
